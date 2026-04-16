@@ -1,0 +1,8 @@
+USE [master]
+BACKUP LOG [LocadoraMax] TO  DISK = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup\LocadoraMax_LogBackup_2026-04-16_04-58-30.bak' WITH NOFORMAT, NOINIT,  NAME = N'LocadoraMax_LogBackup_2026-04-16_04-58-30', NOSKIP, NOREWIND, NOUNLOAD,  NORECOVERY ,  STATS = 5
+RESTORE DATABASE [LocadoraMax] FROM  DISK = N'P:\Backup\LocadoraMax\LocadoraMax_backup_2026_04_14_101555_6339337.bak' WITH  FILE = 1,  NORECOVERY,  NOUNLOAD,  STATS = 5
+RESTORE DATABASE [LocadoraMax] FROM  DISK = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup\LocadoraMax_backup_2026_04_14_101622_8717701.dif' WITH  FILE = 1,  NORECOVERY,  NOUNLOAD,  STATS = 5
+RESTORE LOG [LocadoraMax] FROM  DISK = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup\LocadoraMax_backup_2026_04_14_101637_9923881.trn' WITH  FILE = 1,  NOUNLOAD,  STATS = 5
+
+GO
+
